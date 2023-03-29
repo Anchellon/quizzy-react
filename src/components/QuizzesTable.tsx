@@ -47,13 +47,13 @@ export default function QuizzesTable() {
     getCoreRowModel: getCoreRowModel(),
   });
   return (
-    <div className="my-5 px-2 border">
+    <div className="my-5 p-2 border">
       <table>
         <thead>
           {table.getHeaderGroups().map((headerGroup) => (
             <tr key={headerGroup.id}>
               {headerGroup.headers.map((header) => (
-                <th key={header.id}>
+                <th key={header.id} className="col-11">
                   {header.isPlaceholder
                     ? null
                     : flexRender(
