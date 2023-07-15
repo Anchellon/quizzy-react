@@ -48,7 +48,7 @@ export default function QuizzesTable() {
   });
   return (
     <div className="my-5 p-2 border">
-      <table>
+      <table className="table table-striped table-hover">
         <thead>
           {table.getHeaderGroups().map((headerGroup) => (
             <tr key={headerGroup.id}>
